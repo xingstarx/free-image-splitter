@@ -16,6 +16,9 @@ export const metadata: Metadata = {
   title: "Free Image Splitter - Split Images Online",
   description: "A simple online tool to split images into multiple parts. Supports horizontal, vertical, and custom grid splitting. No installation needed - works directly in your browser.",
   keywords: "image splitter, online tool, image processing, image editor, free tool",
+  alternates: {
+    canonical: 'https://free.imagesplitter.vip/'
+  }
 };
 
 export default function RootLayout({

@@ -23,7 +23,9 @@ export default function Home() {
     <div className="min-h-screen p-4 sm:p-8 font-[family-name:var(--font-geist-sans)]">
       <main className="flex flex-col gap-8 items-center">
         <h1 className="text-3xl font-bold text-center mb-4">Free Online Image Splitter</h1>
-
+        <p className="text-center text-gray-600 dark:text-gray-400 mb-8 max-w-2xl">
+          A simple and easy-to-use online tool for splitting images. Supports horizontal splitting, vertical splitting, and custom grid splitting. No software installation required - use it directly in your browser.
+        </p>
         <ImageSplitter {...texts} />
 
         <div className="text-center text-gray-600 dark:text-gray-400 mb-8 max-w-3xl mx-auto space-y-8">
@@ -149,6 +151,22 @@ export default function Home() {
         </div>
 
       </main>
+      <footer className="border-t border-gray-200 dark:border-gray-800 mt-16 py-8">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center">
+            <a href="https://free.imagesplitter.vip" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-blue-600 font-medium">
+              free.imagesplitter.vip
+            </a>
+            <p className="mt-4 text-sm text-gray-500 dark:text-gray-400">
+              Free Image Splitter - A powerful online tool for splitting images into multiple parts with pixel-perfect precision.
+              No installation required, works directly in your browser.
+            </p>
+            <p className="mt-2 text-sm text-gray-500 dark:text-gray-400">
+              © {new Date().getFullYear()} Free Image Splitter. All rights reserved.
+            </p>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 }
