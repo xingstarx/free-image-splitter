@@ -234,7 +234,11 @@ const ImageSplitter = ({ dropzoneTextActive, dropzoneTextInactive, dropzoneTextI
           </>
         )}
 
-        <DownloadButton zipContent={zipContent} zipFilename={zipFilename} downloadAllAsZipButtonText={downloadAllAsZipButtonText} />
+        {zipContent && <DownloadButton 
+          zipContent={zipContent} 
+          zipFilename={zipFilename} 
+          downloadAllAsZipButtonText={downloadAllAsZipButtonText} 
+        />}
       </div>
       <div className="w-full md:w-1/2">
         <h3 className="text-xl font-bold mb-4">{previewTitle}</h3>
